@@ -1,0 +1,110 @@
+#app-features {
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        padding-bottom: 2rem;
+    }
+    .header {
+        margin-bottom: 2rem;
+        grid-area: header;
+
+        h2 {
+            text-align: center;
+        }
+        p {
+            font-size: 18px;
+            text-align: center;
+        }
+    }
+    .images {
+        display: none;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        
+        .features {
+            display: grid;
+            gap: 1rem;
+            width: 100%;
+            justify-content: left;
+            grid-template-columns: auto auto;
+            grid-template-areas:    "card h3"
+                                    "card p";
+        }
+        p{
+            grid-area: p;
+        }
+        h3 {
+            font-size: 20px;
+            margin: 0;
+            padding-left: 0;
+            padding-top: 0;
+            grid-area: h3;
+        }
+        .icon {        
+            grid-area: card;
+        }
+    }
+
+    @include tablet {
+        .container {
+            padding: 0 0 2rem 0;
+        }
+
+        .content {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:    "header header"
+                                "payments security"
+                                "statistics support"
+                                "cashback standards";
+        }
+        .header h2 {
+            font-size: 33px;
+        }
+        #f1 {
+            grid-area: payments;
+        }
+        #f2 {
+            grid-area: security;
+        }
+        #f3 {
+            grid-area: statistics;
+        }
+        #f4 {
+            grid-area: support;
+        }
+        #f5 {
+            grid-area: cashback;
+        }
+        #f6 {
+            grid-area: standards;
+        }
+    }    
+
+    @include desktop {
+        .container {
+            grid-template-columns: 500px 1fr;
+            grid-template-areas:    "images content";
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+        }
+        
+        .header h2 {
+            font-size: 40px;
+            text-align: left;
+            padding-left: 0;
+        }
+        .container p {
+            text-align: left;
+        }
+        .images {
+            display: grid;
+        }
+    }
+}

@@ -1,0 +1,6 @@
+footer .container {
+    @include flex-center;
+    
+    padding: 2rem;
+    text-align: center;
+}

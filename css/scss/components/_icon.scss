@@ -1,0 +1,6 @@
+.icon {
+    @include flex-center;
+    width: 60px;
+    aspect-ratio: 1;
+    border-radius: 0.5em;
+}

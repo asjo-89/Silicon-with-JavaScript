@@ -1,0 +1,8 @@
+@mixin icon {
+    @include btn-border-radius;
+    
+    width: 60px;
+    aspect-ratio: 1;
+    background-color: var(--color-grey200);
+    grid-area: card;
+}

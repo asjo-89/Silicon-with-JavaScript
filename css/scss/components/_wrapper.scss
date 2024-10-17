@@ -1,0 +1,16 @@
+.wrapper{
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-grey700);
+    font-size: 1rem;
+    min-width: 310px;
+
+    p {
+        line-height: 1.6;
+    }
+    span {
+        line-height: 1.5;
+    }
+} 

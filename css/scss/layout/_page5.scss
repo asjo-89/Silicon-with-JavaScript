@@ -1,0 +1,120 @@
+#faq {
+    .container {
+        @include flex-center;
+        justify-content: center;
+        padding: 2rem 1rem 2rem 1rem;
+    }
+    .contact, #phone, #message {
+        display: none;
+    }
+    .accordion {
+        position: relative;
+        width: 100%;
+        
+        .title {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        input {
+            width: 0;
+            height: 0;
+            opacity: 0;
+            position: absolute;
+        }
+        .list-item {
+            width: 100%;
+            margin-bottom: 1rem;
+            padding: 1em;
+            display: flex;
+            flex-direction: column;
+            align-items: space-between;
+            justify-content: center;
+            border-radius: .5em;
+        }
+        .btn-circle-acc {
+            width: 2.5rem;
+            height: 2.5rem;
+            transition: all .3s ease;
+        }
+        .question {
+            padding: 1rem;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            background-color: transparent;
+        }
+        .question::after {
+            content: '';
+            transform: scale(1.8);
+        }
+        .content {
+            max-height: 0;
+            opacity: 0;
+            line-height: 1.5;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            overflow: hidden;
+            transition: all .3s ease-out;
+        }
+        input[type="radio"]:checked ~ .title .btn-circle {
+            transform: rotate(180deg);
+        }
+        input[type="radio"]:checked + .question::after {
+            content: '';
+        }
+        input[type="radio"]:checked ~ .content {
+            max-height: 500px;
+            opacity: 1;
+            transition: all .3s ease-in;
+        }
+    }
+
+    @include tablet;
+        .container {
+            padding: 2rem 0 3rem 0;
+        }
+
+    @include desktop {
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding-top: 4rem;
+            gap: 4rem;
+        }
+        .accordion {
+            grid-column: 2;
+        }
+        h2 {
+            font-size: 40px;
+        }
+        .contact {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+        }
+        .contact-us {
+            display: flex;
+            gap: 4rem;
+        }
+        #head {
+            grid-column: 1 / 3;
+        }
+        #head-text {
+            font-size: 18px;
+            text-align: center;
+        }
+        .small-text {
+            font-size: 14px;
+        }
+        .contact-link {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+    }
+}   
+
+    

@@ -1,0 +1,65 @@
+#clients {
+    display: none;
+
+    @include desktop {
+        display: block;
+        
+        .container {
+            padding: 6rem 0 6rem 0;
+            display: flex;
+            justify-content: center;
+            gap: 5rem;
+            position: relative;
+        }
+        h2 {
+            font-size: 2.5rem;
+        }
+        .btn-quotation {
+            width: 2.5rem;
+            aspect-ratio: 1;
+        }
+        #quotation-1 {
+            position: absolute;
+            top: 4.5rem;
+            left: 34rem;
+        }
+        #quotation-2 {
+            position: absolute;
+            top: 4.5rem;
+            left: 60.5rem;
+        }
+        .cards {
+            @include flex-center;
+
+            max-width: 800px;
+            gap: 3rem;
+        }
+        .card {
+            max-height:300px;
+            padding: 1.5rem;
+            border-radius: .5rem;
+        }
+        .stars {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 1rem;
+            padding-top: 1rem;
+
+            .data {
+                display: flex;
+                flex-direction: column;
+            }
+            .name {
+                font-weight: 700;
+            }
+        }
+    }
+}

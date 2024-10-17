@@ -1,0 +1,29 @@
+a {
+    color: var(--color-white);
+
+    &:hover {
+        color: var(--color-white);
+    }
+}
+
+.discover-more {
+    color: var(--color-grey800);
+
+    &:hover {
+        color: var(--color-grey800);
+    }
+}
+
+.nav-link {
+    color: var(--color-grey800);
+
+    &:hover {
+        color: var(--color-grey800);
+    }
+}
+#purple {
+    color: var(--color-primary-hover);
+}
+#green {
+    color: var(--color-success);
+}

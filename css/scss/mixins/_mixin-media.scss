@@ -1,0 +1,16 @@
+@mixin tablet {
+    @media (width > 768px) {
+        .container, .container-nav {
+            max-width: 720px;
+        }
+        @content
+    }
+}
+@mixin desktop {
+    @media (width > 1400px) {
+        .container, .container-nav {
+            max-width: 1320px;
+        }
+        @content
+    }
+}

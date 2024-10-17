@@ -1,0 +1,24 @@
+@import "./mixins/mixins";
+@import "./colors/themes.scss";
+
+@import "./components/base";
+@import "./components/container";
+@import "./components/links";
+@import "./components/icon";
+@import "./components/buttons";
+@import "./components/headings";
+@import "./components/wrapper";
+@import "./components/toggle-function";
+@import "./components/form";
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/row-logos";
+@import "./layout/page1";
+@import "./layout/page2";
+@import "./layout/page3";
+@import "./layout/page4";
+@import "./layout/page5";
+@import "./layout/page6";
+@import "./layout/footer";
+@import "./layout/images";

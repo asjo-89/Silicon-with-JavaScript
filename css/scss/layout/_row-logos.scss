@@ -1,0 +1,25 @@
+#logo-row {
+    display: none;
+
+    @include tablet {
+        display: block;
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            padding: 5rem 0 2rem 0;
+        }
+        #logo5, #logo6 {
+            display: none;
+        }
+        
+    }
+
+    @include desktop {
+        #logo5, #logo6 {
+            display: flex;
+        }
+    }
+}

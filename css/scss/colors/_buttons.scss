@@ -1,0 +1,40 @@
+.discover-more {
+    color: var(--colorgrey900);
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color-btn-primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primary-hover);
+    box-shadow: inset 0 0 5px var(--color-primary-inset);
+}
+
+.btn-app-download {
+    background-color: var(--color-grey900);
+}
+
+.btn-app-download:hover {
+    background-color: var(--color-grey700);
+    box-shadow: inset 0 0 10px 5px var(--color-grey800);
+}
+
+.btn-circle {
+    background-color: var(--color-grey100);
+    box-shadow: 0 0 2px var(--color-grey700);
+}
+
+.btn-circle:hover {
+    box-shadow: inset 0 0 3px 0 #3e40be4d;
+}
+
+.btn-toggle-switch .label{
+        color: var(--color-grey700);
+}
+
+.btn-circle-acc {
+    box-shadow: 0 0 2px var(--color-grey500);
+    color: var(--color-grey900);
+}

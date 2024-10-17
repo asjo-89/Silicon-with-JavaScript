@@ -1,0 +1,58 @@
+header .container-nav {
+    @include grid-center;
+    padding: 1rem;
+    grid-template-columns: 1fr auto auto;
+    gap: 2rem;
+
+    #signin {
+        display: none;
+    }   
+    #logo-dark {
+        display: none;
+    }
+    .navbar {
+        display: none;
+    }
+    #mob-menu-dark {
+        display: none;
+    }
+    .label{
+        display: none;
+    }
+
+    @include tablet {
+            gap: 3rem;
+            padding: 0;
+            padding-top: 1rem;
+
+        .btn-toggle-switch .label {
+            display: block;
+            font-weight: 600;
+        }
+        .btn-toggle-switch {
+            width: 150px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    @include desktop {
+        grid-template-columns: auto 1fr auto auto;
+
+        .navbar {
+            display: block;
+        }
+        .nav-link {
+        font-weight: 700;
+        padding: .1em .4em;
+        }
+        #signin {
+            display: block;
+        }
+        .btn-mobile-menu {
+            display: none;
+        }
+        
+    }
+}

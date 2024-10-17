@@ -1,0 +1,244 @@
+:root {
+  --color-arrow-white: #FFF;
+  --color-btn-primary: #FFF;
+  --color-clients: #565973;
+  --color-name: #0B0F19;
+  --color-job: #9397AD;
+  --color-primary: hsl(239, 84%, 65%);
+  --color-primary-hover: hsl(239, 84%, 70%);
+  --color-primary-opacity: rgb(99, 102, 241, .3);
+  --color-gradient: #6366F1 hsl(293, 84%, 35%) hsl(225, 75%, 97%);
+  --color-error: #EF4444;
+  --color-success: #22C55E;
+  --color-warning: #FFBA08;
+  --color-info: #4C82F7;
+  --color-grey900: #0B0F19;
+  --color-grey800: #33354D;
+  --color-grey700: #565973;
+  --color-grey600: #9397AD;
+  --color-grey500: #B4B7C9;
+  --color-grey400: #D4D7E5;
+  --color-grey300: #E2E5F1;
+  --color-grey200: #EFF2FC;
+  --color-grey100: #F3F6FF;
+  --color-white: #FFF;
+}
+:root .dark {
+  --color-grey900: rgba(255, 255, 255, 0.770);
+  --color-grey800: #9397AD;
+  --color-grey700: #B4B7C9;
+  --color-grey600: #9397AD;
+  --color-grey500: #B4B7C9;
+  --color-grey400: #0B0F19;
+  --color-grey300: #565973;
+  --color-grey200: #33354D;
+  --color-grey100: #0a0c11;
+  --color-white: #1c1e2b;
+  --color-bg-dark: #000;
+  --color-btn-primary: rgba(255, 255, 255, 0.770);
+  --color-primary: hsl(239, 48%, 49%);
+  --color-primary-hover: hsl(239, 84%, 70%);
+  --color-primary-opacity: rgb(99, 102, 241, .3);
+}
+
+body {
+  color: var(--color-grey700);
+}
+
+#hero {
+  background: rgb(99, 102, 241);
+  background: linear-gradient(0deg, rgba(99, 102, 241, 0.1012780112) 0%, rgba(218, 70, 239, 0.0452556022) 42%, rgba(241, 244, 253, 0.0676645658) 83%);
+}
+
+#app-features .header p {
+  color: var(--color-grey600);
+}
+
+#work {
+  background-color: var(--color-grey100);
+}
+
+#clients {
+  background-color: var(--color-grey100);
+}
+#clients .btn-quotation {
+  box-shadow: 2px 5px 10px var(--color-grey500);
+}
+#clients .card {
+  background-color: var(--color-white);
+  color: var(--color-grey700);
+  box-shadow: 2px 5px 10px var(--color-grey400);
+}
+#clients .name {
+  color: var(--color-grey900);
+}
+#clients .job {
+  color: var(--color-grey600);
+}
+
+#faq .list-item {
+  background-color: var(--color-white);
+  box-shadow: 1px 4px 4px var(--color-grey300);
+}
+#faq .list-item .question {
+  color: var(--color-grey900);
+}
+#faq .list-item input[type=radio]:checked ~ .title .btn-circle {
+  background-color: var(--color-primary);
+  color: var(--color-arrow-white);
+}
+
+#subscribe {
+  background-color: var(--color-grey100);
+}
+#subscribe .form .form-input {
+  color: var(--color-grey500);
+  border: 1px solid var(--color-grey500);
+}
+
+footer p {
+  color: var(--color-grey600);
+}
+
+.slider {
+  background-color: var(--color-white);
+}
+
+label[for=theme-switch] {
+  background-color: var(--color-grey600);
+}
+
+input[type=checkbox]:checked ~ .wrapper {
+  --color-grey900: rgba(255, 255, 255);
+  --color-grey800: #9397AD;
+  --color-grey700: #B4B7C9;
+  --color-grey600: #9397AD;
+  --color-grey500: #B4B7C9;
+  --color-grey400: #0B0F19;
+  --color-grey300: #565973;
+  --color-grey200: #33354D;
+  --color-grey100: #0a0c11;
+  --color-white: #222433;
+  --color-bg-dark: #000;
+  --color-arrow-white: #FFF;
+  --color-btn-primary: rgba(255, 255, 255, 0.842);
+  --color-primary: hsl(239, 48%, 49%);
+  --color-primary-hover: hsl(239, 84%, 70%);
+  --color-primary-opacity: rgb(99, 102, 241, .3);
+  background-color: var(--color-bg-dark);
+}
+input[type=checkbox]:checked ~ .wrapper .slider {
+  background-color: var(--color-grey900);
+}
+input[type=checkbox]:checked ~ .wrapper img {
+  filter: brightness(95%);
+}
+input[type=checkbox]:checked ~ .wrapper .btn-circle {
+  background-color: var(--color-white);
+}
+input[type=checkbox]:checked ~ .wrapper #faq #phone, input[type=checkbox]:checked ~ .wrapper #faq #message {
+  box-shadow: 0 0 10px var(--color-grey300);
+  background-color: var(--color-grey100);
+}
+input[type=checkbox]:checked ~ .wrapper #subscribe .form-input {
+  background-color: var(--color-white);
+}
+
+input[type=checkbox]:checked ~ .wrapper .toggle {
+  background-color: var(--color-primary);
+}
+
+.discover-more {
+  color: var(--colorgrey900);
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-btn-primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-hover);
+  box-shadow: inset 0 0 5px var(--color-primary-inset);
+}
+
+.btn-app-download {
+  background-color: var(--color-grey900);
+}
+
+.btn-app-download:hover {
+  background-color: var(--color-grey700);
+  box-shadow: inset 0 0 10px 5px var(--color-grey800);
+}
+
+.btn-circle {
+  background-color: var(--color-grey100);
+  box-shadow: 0 0 2px var(--color-grey700);
+}
+
+.btn-circle:hover {
+  box-shadow: inset 0 0 3px 0 rgba(62, 64, 190, 0.3019607843);
+}
+
+.btn-toggle-switch .label {
+  color: var(--color-grey700);
+}
+
+.btn-circle-acc {
+  box-shadow: 0 0 2px var(--color-grey500);
+  color: var(--color-grey900);
+}
+
+a {
+  color: var(--color-white);
+}
+a:hover {
+  color: var(--color-white);
+}
+
+.discover-more {
+  color: var(--color-grey800);
+}
+.discover-more:hover {
+  color: var(--color-grey800);
+}
+
+.nav-link {
+  color: var(--color-grey800);
+}
+.nav-link:hover {
+  color: var(--color-grey800);
+}
+
+#purple {
+  color: var(--color-primary-hover);
+}
+
+#green {
+  color: var(--color-success);
+}
+
+.logo {
+  border: 1px solid var(--color-grey300);
+  box-shadow: 0 0 4px var(--color-grey300);
+}
+
+.icon {
+  background-color: var(--color-grey200);
+}
+
+.form .form-input {
+  border: 1px solid var(--color-grey600);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-grey900);
+}
+
+#header p {
+  color: var(--color-grey800);
+}
+
+#subscribe .text-desktop {
+  color: var(--color-grey900);
+}
